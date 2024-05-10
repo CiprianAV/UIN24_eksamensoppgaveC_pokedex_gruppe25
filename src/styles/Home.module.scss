@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  
+    nav {
+      a {
+        margin-right: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    .search-bar {
+      border-radius: 0;
+      padding: 5px;
+    }
+  }
+  
+  // Pokemon list styles
+  .pokemon-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    li {
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  }
+  
+  // Type list styles
+  .type-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    li {
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  }
