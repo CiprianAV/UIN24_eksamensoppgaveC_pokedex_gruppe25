@@ -1,25 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Home.module.scss'; // Ensure you have this file or adjust as necessary
 
 function Home() {
   return (
     <main>
-      {/* Header */}
       <header>
         <nav>
-          {/* Link to home page */}
           <Link to="/" className="logo">UIN Pokedex</Link>
-          {/* Link to Teams page */}
           <Link to="/teams" className="nav-link">Teams</Link>
         </nav>
-        {/* Search bar */}
         <input type="text" placeholder="Søk etter pokemon" className="search-bar" />
       </header>
 
-      {/* Main Pokemons */}
       <section>
         <h1>Main Pokemons</h1>
-        {/* List of main pokemons */}
         <ul className="pokemon-list">
           <li>Bulbasaur</li>
           <li>Ivysaur</li>
@@ -33,10 +28,8 @@ function Home() {
         </ul>
       </section>
 
-      {/* Types */}
       <section>
         <h1>Types</h1>
-        {/* List of pokemon types */}
         <ul className="type-list">
           <li>Normal</li>
           <li>Fighting</li>
